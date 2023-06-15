@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "gt7PkyQIWiPvXxk/jkSwiLg3uWHtC8vLOhpRG8TmJXS7W86uELlW0Y3ErApga4UUpl7rx7D1850BEtnIpV+jYw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\bjwha\\Desktop\\Code project\\LSTM\\LSTM.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bjwha\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

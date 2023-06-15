@@ -1,0 +1,1 @@
+Only error forgot to change to the output weight variables

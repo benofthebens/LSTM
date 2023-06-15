@@ -1,0 +1,17 @@
+C:\Users\bjwha\Desktop\Code project\LSTM\bin\Debug\net6.0\LSTM.exe
+C:\Users\bjwha\Desktop\Code project\LSTM\bin\Debug\net6.0\LSTM.deps.json
+C:\Users\bjwha\Desktop\Code project\LSTM\bin\Debug\net6.0\LSTM.runtimeconfig.json
+C:\Users\bjwha\Desktop\Code project\LSTM\bin\Debug\net6.0\LSTM.dll
+C:\Users\bjwha\Desktop\Code project\LSTM\bin\Debug\net6.0\LSTM.pdb
+C:\Users\bjwha\Desktop\Code project\LSTM\obj\Debug\net6.0\LSTM.csproj.AssemblyReference.cache
+C:\Users\bjwha\Desktop\Code project\LSTM\obj\Debug\net6.0\LSTM.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bjwha\Desktop\Code project\LSTM\obj\Debug\net6.0\LSTM.AssemblyInfoInputs.cache
+C:\Users\bjwha\Desktop\Code project\LSTM\obj\Debug\net6.0\LSTM.AssemblyInfo.cs
+C:\Users\bjwha\Desktop\Code project\LSTM\obj\Debug\net6.0\LSTM.csproj.CoreCompileInputs.cache
+C:\Users\bjwha\Desktop\Code project\LSTM\obj\Debug\net6.0\LSTM.dll
+C:\Users\bjwha\Desktop\Code project\LSTM\obj\Debug\net6.0\refint\LSTM.dll
+C:\Users\bjwha\Desktop\Code project\LSTM\obj\Debug\net6.0\LSTM.pdb
+C:\Users\bjwha\Desktop\Code project\LSTM\obj\Debug\net6.0\LSTM.genruntimeconfig.cache
+C:\Users\bjwha\Desktop\Code project\LSTM\obj\Debug\net6.0\ref\LSTM.dll
+C:\Users\bjwha\Desktop\Code project\LSTM\bin\Debug\net6.0\CsvHelper.dll
+C:\Users\bjwha\Desktop\Code project\LSTM\obj\Debug\net6.0\LSTM.csproj.CopyComplete
