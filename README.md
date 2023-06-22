@@ -20,3 +20,10 @@ it is the most messiest code but i think it works
 ## Second iteration 
 - completed all of the changes above whihc means now it is traianble and it works
 - but the structure of programming needs to be improved
+## Third iteration 
+essentialy coded it in a more managable way
+### errors 
+- forgot the get set values unable to read from csv 
+- needed to set to false to write over the data
+- added for loop that wasnt suposed to be there
+- this caused records to be repeated 
