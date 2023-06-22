@@ -165,7 +165,7 @@ class WeightModel
     public double wo2 { get; set; }
     public double bo1 { get; set; }
 }
-public class LSTMLayerOld_
+public class LSTMLayer
 {
     public double WeightedSumo;
     public double WeightedSumf;
@@ -200,7 +200,7 @@ class LSTMModel
 
 
 
-    public static List<LSTMLayerOld_> layers = new List<LSTMLayerOld_>();
+    public static List<LSTMLayer> layers = new List<LSTMLayer>();
 
 
 
@@ -293,7 +293,7 @@ class LSTMModel
 
     public (double, double) LstmUnit(double input, double longterm, double shortTerm)
     {
-        LSTMLayerOld_ layer = new LSTMLayerOld_();
+        LSTMLayer layer = new LSTMLayer();
 
         layer.PreviousCellState = longterm;
         layer.PreviousHiddenState = shortTerm;
@@ -386,7 +386,7 @@ class LSTMModel
         return 1 - Math.Pow(tanhX, 2);
     }
 
-    public void UpdateWeights(double input, double Expected, LSTMLayerOld_ layer,double LearningRate)
+    public void UpdateWeights(double input, double Expected, LSTMLayer layer,double LearningRate)
     {
         (double Uderivf, double Wderivf, double bderivf) = forgetBackstep(input, Expected, layer);
         wlr1 = wlr1 - (LearningRate * Uderivf);
@@ -408,7 +408,7 @@ class LSTMModel
         wo2 = wo2 - (LearningRate * Wderivo);
         bo1 = bo1 - (LearningRate * bderivo);
     }
-    public (double, double, double) OutputBackstep(double input, double Expected, LSTMLayerOld_ layer)
+    public (double, double, double) OutputBackstep(double input, double Expected, LSTMLayer layer)
     {
         double de_do = ErrorDeriv(Expected, layer.OutputGate) * SigmoidDeriv(layer.WeightedSumo) * Math.Tanh(layer.CellState);
         double de_dU = de_do * input;
@@ -420,7 +420,7 @@ class LSTMModel
 
 
     }
-    public (double, double, double) forgetBackstep(double input, double Expected, LSTMLayerOld_ layer)
+    public (double, double, double) forgetBackstep(double input, double Expected, LSTMLayer layer)
     {
         double de_df = ErrorDeriv(Expected, layer.OutputGate) * layer.OutputGate * SigmoidDeriv(layer.WeightedSumf) * TanhDerivative(layer.CellState) * layer.PreviousCellState;
         double de_dU = de_df * input;
@@ -429,7 +429,7 @@ class LSTMModel
 
         return (de_dU, de_dW, de_db);
     }
-    public (double, double, double) inputBackstep(double input, double Expected, LSTMLayerOld_ layer)
+    public (double, double, double) inputBackstep(double input, double Expected, LSTMLayer  layer)
     {
         double de_di = ErrorDeriv(Expected, layer.OutputGate) * layer.CanidateState * SigmoidDeriv(layer.WeightedSumi) * layer.OutputGate * TanhDerivative(layer.CellState);
         double de_dU = de_di * input;
@@ -438,7 +438,7 @@ class LSTMModel
         return (de_dU, de_dW, de_db);
 
     }
-    public (double, double, double) CanidateStateBackStep(double input, double Expected, LSTMLayerOld_ layer)
+    public (double, double, double) CanidateStateBackStep(double input, double Expected, LSTMLayer layer)
     {
         double de_dg = ErrorDeriv(Expected, layer.OutputGate) * TanhDerivative(layer.CellState) * layer.OutputGate * layer.InputGate * SigmoidDeriv(layer.WeightedSumg);
         double de_dU = de_dg * input;
