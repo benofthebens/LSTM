@@ -18,3 +18,5 @@ it is the most messiest code but i think it works
 - back propgation seems to work just the layout and logic of my code that needs a tweak apart from the incorrect paramaters and attibutes used
 
 ## Second iteration 
+- completed all of the changes above whihc means now it is traianble and it works
+- but the structure of programming needs to be improved
