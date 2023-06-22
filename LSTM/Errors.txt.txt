@@ -1,1 +1,3 @@
 Only error forgot to change to the output weight variables
+Learning Rate too high 
+forgot when adding the dataset had to update weights not after every single one was complete but during after the training 
