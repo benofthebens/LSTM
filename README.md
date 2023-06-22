@@ -17,11 +17,13 @@ it is the most messiest code but i think it works
 - make learning rate a variable
 - back propgation seems to work just the layout and logic of my code that needs a tweak apart from the incorrect paramaters and attibutes used
 
+Added test data with 0's and 1's to train the model with the xpected values and input values 
+
 ## Second iteration 
 - completed all of the changes above whihc means now it is traianble and it works
 - but the structure of programming needs to be improved
 ## Third iteration 
-essentialy coded it in a more managable way
+essentialy a tidy up along with a new csv file format rather than a long record
 ### errors 
 - forgot the get set values unable to read from csv 
 - needed to set to false to write over the data
